@@ -1,0 +1,611 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MythicBoost ID - Jasa Joki Push Rank MLBB Terpercaya</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Fonts: Inter & Rajdhani for Gaming Vibes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        gaming: ['Rajdhani', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0B0F19',
+                        cardBg: '#131A2A',
+                        accentGold: '#F59E0B',
+                        accentBlue: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-900">
+
+    <!-- Toast / Notification Box (Pengganti alert()) -->
+    <div id="toastBox" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-emerald-600 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-emerald-400/30">
+            <i class="fa-solid fa-circle-check text-xl"></i>
+            <span id="toastMessage" class="font-medium text-sm">Berhasil disalin ke clipboard!</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-40 bg-darkBg/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-crown text-slate-950 text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-gaming font-bold text-2xl tracking-wider text-white">MYTHIC<span class="text-amber-400">BOOST</span></span>
+                        <span class="block text-[10px] text-slate-400 -mt-1 tracking-widest uppercase">MLBB Pro Boosting</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                    <a href="#harga" class="hover:text-amber-400 transition-colors">Daftar Harga</a>
+                    <a href="#layanan" class="hover:text-amber-400 transition-colors">Online & Offline</a>
+                    <a href="#pembayaran" class="hover:text-amber-400 transition-colors">Pembayaran</a>
+                    <a href="#order" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Order Sekarang
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuBtn" class="p-2.5 rounded-xl bg-slate-800/80 text-slate-200 hover:text-amber-400 focus:outline-none" aria-label="Buka Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-5 space-y-2">
+            <a href="#harga" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 font-medium">Daftar Harga Rank</a>
+            <a href="#layanan" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 font-medium">Layanan Online & Offline</a>
+            <a href="#pembayaran" class="block px-4 py-3 rounded-xl text-slate-200 hover:bg-slate-800 font-medium">Metode Pembayaran</a>
+            <a href="#order" class="block text-center mt-3 bg-amber-500 text-slate-950 font-bold px-4 py-3 rounded-xl">
+                <i class="fa-brands fa-whatsapp mr-1"></i> Form Order Cepat
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <!-- Background Glow Decorations -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-amber-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700/80 text-amber-400 text-xs sm:text-sm font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Open Order 24 Jam • Winrate Tinggi • 100% Aman & Anti-Banned
+            </div>
+            
+            <h1 class="font-gaming text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white uppercase leading-tight mb-6">
+                Push Rank MLBB Tanpa <br class="hidden sm:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500">Dark System & Lose Streak</span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg mb-10 leading-relaxed">
+                Dikerjakan langsung oleh tim eks-Mythical Immortal berpengalaman. Bisa order secara <strong class="text-slate-200">Online</strong> dari mana saja maupun <strong class="text-slate-200">Offline (COD/Ketemuan)</strong> langsung di tempat!
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/6285860190927?text=Halo%20Admin%20MythicBoost,%20saya%20mau%20tanya-tanya%20jasa%20joki%20MLBB." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-bold text-base sm:text-lg shadow-xl shadow-emerald-600/25 flex items-center justify-center gap-3 transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Chat WhatsApp: 0858-6019-0927
+                </a>
+                <a href="#harga" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-cardBg hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-base sm:text-lg transition-all">
+                    Lihat List Harga
+                </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16 pt-8 border-t border-slate-800/80">
+                <div class="p-3">
+                    <div class="font-gaming text-3xl font-bold text-amber-400">100%</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Privasi Akun Aman</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-gaming text-3xl font-bold text-amber-400">85%+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Rata-rata Winrate</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-gaming text-3xl font-bold text-amber-400">24/7</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Pengerjaan Cepat</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-gaming text-3xl font-bold text-amber-400">FREE</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Request Hero Favorit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Harga Berdasarkan Rank -->
+    <section id="harga" class="py-16 sm:py-24 bg-slate-950/60 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Transparan & Terjangkau</span>
+                <h2 class="font-gaming text-3xl sm:text-5xl font-bold text-white mt-2 uppercase">Daftar Harga Push Rank</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Harga dihitung per bintang / per poin. Tersedia juga harga paketan hemat untuk naik tier penuh!</p>
+            </div>
+
+            <!-- Grid Kartu Harga -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Tier 1: Grandmaster -->
+                <div class="bg-cardBg rounded-2xl p-6 border border-slate-800 hover:border-amber-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold uppercase">Tier Pemula</span>
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center">
+                                <i class="fa-solid fa-shield-halved text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-gaming text-2xl font-bold text-white">GRANDMASTER</h3>
+                        <div class="mt-3 flex items-baseline gap-1">
+                            <span class="text-3xl font-bold text-amber-400">Rp 3.000</span>
+                            <span class="text-sm text-slate-400">/ Bintang</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-5">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Paket GM ke Epic: <strong>Rp 65.000</strong></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Pengerjaan Kilat (1 Hari)</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Bonus MVP & Maniac/Savage</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Bebas Request 3 Hero</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Grandmaster', 3000)" class="mt-8 w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-amber-500 text-white hover:text-slate-950 font-semibold text-sm transition-colors">
+                        Pilih Rank Ini
+                    </button>
+                </div>
+
+                <!-- Tier 2: Epic -->
+                <div class="bg-cardBg rounded-2xl p-6 border border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase">Badak Abadi</span>
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                                <i class="fa-solid fa-dragon text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-gaming text-2xl font-bold text-white">EPIC</h3>
+                        <div class="mt-3 flex items-baseline gap-1">
+                            <span class="text-3xl font-bold text-emerald-400">Rp 5.000</span>
+                            <span class="text-sm text-slate-400">/ Bintang</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-5">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Paket Epic ke Legend: <strong>Rp 110.000</strong></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Anti-Ban & Tanpa Cheat</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Update Progress via WA</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-emerald-400"></i> Bebas Request 3 Hero</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Epic', 5000)" class="mt-8 w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-emerald-500 text-white hover:text-slate-950 font-semibold text-sm transition-colors">
+                        Pilih Rank Ini
+                    </button>
+                </div>
+
+                <!-- Tier 3: Legend (Popular) -->
+                <div class="bg-gradient-to-b from-slate-800/90 to-cardBg rounded-2xl p-6 border-2 border-amber-500 relative flex flex-col justify-between shadow-xl shadow-amber-500/10">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-xs font-extrabold px-4 py-1 rounded-full uppercase tracking-wider">
+                        Paling Laris
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4 mt-1">
+                            <span class="px-3 py-1 rounded-lg bg-amber-500/20 text-amber-300 text-xs font-bold uppercase">Road to Mythic</span>
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center">
+                                <i class="fa-solid fa-fire text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-gaming text-2xl font-bold text-white">LEGEND</h3>
+                        <div class="mt-3 flex items-baseline gap-1">
+                            <span class="text-3xl font-bold text-amber-400">Rp 7.000</span>
+                            <span class="text-sm text-slate-400">/ Bintang</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-sm text-slate-200 border-t border-slate-700 pt-5">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-amber-400"></i> Paket Legend ke Mythic: <strong>Rp 155.000</strong></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-amber-400"></i> Dikerjakan Tim Party Pro</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-amber-400"></i> Winrate Terjaga Tinggi</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-amber-400"></i> Prioritas Antrian Pengerjaan</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Legend', 7000)" class="mt-8 w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-colors shadow-lg shadow-amber-500/20">
+                        Pilih Rank Ini
+                    </button>
+                </div>
+
+                <!-- Tier 4: Mythic - Immortal -->
+                <div class="bg-cardBg rounded-2xl p-6 border border-slate-800 hover:border-purple-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-purple-500/10 text-purple-400 text-xs font-bold uppercase">High Tier</span>
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                                <i class="fa-solid fa-gem text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-gaming text-2xl font-bold text-white">MYTHIC - IMMORTAL</h3>
+                        <div class="mt-3 flex items-baseline gap-1">
+                            <span class="text-3xl font-bold text-purple-400">Rp 12.000+</span>
+                            <span class="text-sm text-slate-400">/ Bintang</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-5">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-purple-400"></i> Grading Mythic (10 Match): <strong>Rp 110.000</strong></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-purple-400"></i> Mythic Honor (★25+): <strong>Rp 15.000/★</strong></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-purple-400"></i> Mythic Glory (★50+): <strong>Rp 20.000/★</strong></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-purple-400"></i> Immortal (★100+): <strong>Rp 25.000/★</strong></li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Mythic', 12000)" class="mt-8 w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-purple-500 text-white font-semibold text-sm transition-colors">
+                        Pilih Rank Ini
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Waktu & Bentuk Pemesanan (Online & Offline) -->
+    <section id="layanan" class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Fleksibel Sesuai Kebutuhanmu</span>
+                <h2 class="font-gaming text-3xl sm:text-5xl font-bold text-white mt-2 uppercase">Waktu & Bentuk Pemesanan</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Pilih metode pengerjaan yang paling nyaman dan membuatmu tenang.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Mode Online -->
+                <div class="bg-cardBg rounded-3xl p-8 border border-slate-800 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6 border border-blue-500/20">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="font-gaming text-2xl sm:text-3xl font-bold text-white mb-3">1. Pemesanan Online (Jarak Jauh)</h3>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
+                        Praktis dari rumah! Cukup kirimkan data login akun (Moonton / VK / TikTok / Facebook) via WhatsApp. Akun dijamin aman 100%, tidak akan otak-atik skin, diamond, maupun battle point.
+                    </p>
+                    <div class="bg-darkBg/80 rounded-2xl p-4 border border-slate-800/80 space-y-2.5 text-sm">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400"><i class="fa-regular fa-clock text-blue-400 mr-2"></i>Jam Order Admin:</span>
+                            <span class="font-semibold text-white">24 Jam Nonstop</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400"><i class="fa-solid fa-gamepad text-blue-400 mr-2"></i>Jadwal Push:</span>
+                            <span class="font-semibold text-white">Bisa Request Jam Main</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mode Offline -->
+                <div class="bg-cardBg rounded-3xl p-8 border border-slate-800 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6 border border-amber-500/20">
+                        <i class="fa-solid fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="font-gaming text-2xl sm:text-3xl font-bold text-white mb-3">2. Pemesanan Offline (COD / Ketemuan)</h3>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
+                        Ragu kasih akun lewat online? Tenang! Kita bisa ketemuan langsung di area sekitar (Kafe / Warkop / Basecamp). Kamu bisa pantau langsung proses push rank di depan mata atau mabar bareng penjoki!
+                    </p>
+                    <div class="bg-darkBg/80 rounded-2xl p-4 border border-slate-800/80 space-y-2.5 text-sm">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400"><i class="fa-regular fa-calendar-check text-amber-400 mr-2"></i>Hari & Waktu COD:</span>
+                            <span class="font-semibold text-white">Setiap Hari (10.00 - 23.00 WIB)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400"><i class="fa-solid fa-location-dot text-amber-400 mr-2"></i>Sistem Pembayaran:</span>
+                            <span class="font-semibold text-white">Bisa Bayar di Tempat / Transfer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metode Pembayaran -->
+    <section id="pembayaran" class="py-16 bg-slate-950/60 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-wider">Transaksi Mudah</span>
+                <h2 class="font-gaming text-3xl sm:text-5xl font-bold text-white mt-2 uppercase">Metode Pembayaran</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Mendukung berbagai pembayaran digital (E-Wallet) dan transfer rekening bank.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- E-Wallet Card -->
+                <div class="bg-cardBg rounded-2xl p-6 border border-slate-800">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center">
+                            <i class="fa-solid fa-wallet text-lg"></i>
+                        </div>
+                        <h3 class="font-gaming text-2xl font-bold text-white">E-Wallet & QRIS</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-5">
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-sky-400">DANA</div>
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-emerald-400">GOPAY</div>
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-purple-400">OVO</div>
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-orange-400">ShopeePay</div>
+                    </div>
+                    <div class="flex items-center justify-between bg-slate-900/90 p-3.5 rounded-xl border border-slate-700/70">
+                        <div>
+                            <span class="block text-xs text-slate-400">Nomor E-Wallet:</span>
+                            <span class="font-mono font-bold text-white text-sm sm:text-base">085860190927</span>
+                        </div>
+                        <button onclick="copyText('085860190927')" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-semibold flex items-center gap-1.5 transition-colors">
+                            <i class="fa-regular fa-copy"></i> Salin
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rekening Bank Card -->
+                <div class="bg-cardBg rounded-2xl p-6 border border-slate-800">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                            <i class="fa-solid fa-building-columns text-lg"></i>
+                        </div>
+                        <h3 class="font-gaming text-2xl font-bold text-white">Transfer Rekening Bank</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-5">
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-blue-400">Bank BCA</div>
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-indigo-400">Bank BRI</div>
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-yellow-400">Bank Mandiri</div>
+                        <div class="bg-darkBg border border-slate-800 rounded-xl p-3 text-center font-bold text-teal-400">SeaBank</div>
+                    </div>
+                    <div class="bg-slate-900/90 p-3.5 rounded-xl border border-slate-700/70 flex items-center justify-between">
+                        <div>
+                            <span class="block text-xs text-slate-400">Info Nomor Rekening:</span>
+                            <span class="text-xs sm:text-sm text-slate-200 font-medium">Konfirmasi Admin via WA untuk No. Rek</span>
+                        </div>
+                        <a href="https://wa.me/6285860190927?text=Halo%20Admin,%20minta%20info%20nomor%20rekening%20untuk%20pembayaran%20joki%20MLBB." target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold whitespace-nowrap transition-colors">
+                            Minta Rek
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kalkulator & Form Pemesanan Langsung ke WhatsApp -->
+    <section id="order" class="py-16 sm:py-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-cardBg rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
+                <div class="text-center mb-8">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">Form Order Otomatis</span>
+                    <h2 class="font-gaming text-3xl sm:text-4xl font-bold text-white uppercase">Hitung & Order Via WhatsApp</h2>
+                    <p class="text-slate-400 text-sm mt-2">Isi detail pesananmu di bawah ini, sistem akan langsung menghubungkan ke WhatsApp Admin (<strong class="text-white">0858-6019-0927</strong>).</p>
+                </div>
+
+                <form id="orderForm" class="space-y-5">
+                    <!-- Pilih Rank -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="rankSelect" class="block text-sm font-medium text-slate-300 mb-2">Pilih Tier Rank Saat Ini</label>
+                            <select id="rankSelect" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                                <option value="Grandmaster" data-price="3000">Grandmaster (Rp 3.000 / Bintang)</option>
+                                <option value="Epic" data-price="5000">Epic (Rp 5.000 / Bintang)</option>
+                                <option value="Legend" data-price="7000" selected>Legend (Rp 7.000 / Bintang)</option>
+                                <option value="Mythic" data-price="12000">Mythic Biasa (Rp 12.000 / Bintang)</option>
+                                <option value="Mythic Honor" data-price="15000">Mythic Honor ★25+ (Rp 15.000 / Bintang)</option>
+                                <option value="Mythic Glory" data-price="20000">Mythic Glory ★50+ (Rp 20.000 / Bintang)</option>
+                                <option value="Mythic Immortal" data-price="25000">Mythic Immortal ★100+ (Rp 25.000 / Bintang)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="starCount" class="block text-sm font-medium text-slate-300 mb-2">Jumlah Bintang / Poin</label>
+                            <input type="number" id="starCount" min="1" max="100" value="5" required class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Bentuk & Waktu Pemesanan -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="orderType" class="block text-sm font-medium text-slate-300 mb-2">Bentuk Pemesanan</label>
+                            <select id="orderType" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                                <option value="Online (Jarak Jauh)">Online (Kirim Data Akun)</option>
+                                <option value="Offline (COD / Ketemuan)">Offline (COD / Ketemuan Langsung)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="orderTime" class="block text-sm font-medium text-slate-300 mb-2">Waktu Pengerjaan</label>
+                            <select id="orderTime" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                                <option value="Sekarang Juga (Langsung Gas)">Sekarang Juga (Langsung Gas)</option>
+                                <option value="Siang Hari (10.00 - 17.00)">Siang Hari (10.00 - 17.00)</option>
+                                <option value="Malam Hari (19.00 - 02.00)">Malam Hari (19.00 - 02.00)</option>
+                                <option value="Fleksibel / Bebas">Fleksibel / Bebas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Metode Pembayaran & Request Hero -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label for="paymentMethod" class="block text-sm font-medium text-slate-300 mb-2">Metode Pembayaran</label>
+                            <select id="paymentMethod" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 transition-colors">
+                                <option value="E-Wallet (DANA / GoPay / OVO / ShopeePay)">E-Wallet (DANA / GoPay / OVO / ShopeePay)</option>
+                                <option value="Transfer Rekening Bank">Transfer Rekening Bank</option>
+                                <option value="Cash / Tunai (Khusus COD Offline)">Cash / Tunai (Khusus COD Offline)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="heroRequest" class="block text-sm font-medium text-slate-300 mb-2">Request Hero (Opsional)</label>
+                            <input type="text" id="heroRequest" placeholder="Contoh: Ling, Fanny, Hayabusa" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Box Total Estimasi Harga -->
+                    <div class="bg-darkBg border border-amber-500/30 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Total Estimasi Biaya:</span>
+                            <div id="totalPriceDisplay" class="font-gaming text-3xl sm:text-4xl font-bold text-amber-400">Rp 35.000</div>
+                        </div>
+                        <button type="submit" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-bold text-base shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2.5 transition-all cursor-pointer">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            Kirim Order ke WA
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-gaming font-bold text-2xl tracking-wider text-white">MYTHIC<span class="text-amber-400">BOOST</span></span>
+                <p class="text-slate-400 text-sm mt-1">Jasa Joki Push Rank Mobile Legends: Bang Bang Cepat, Aman, & Bergaransi.</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center gap-4 text-sm text-slate-300">
+                <a href="https://wa.me/6285860190927" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 px-4 py-2.5 rounded-xl transition-colors">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                    <span>WhatsApp: <strong>0858-6019-0927</strong></span>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-6 border-t border-slate-900 text-center text-xs text-slate-500">
+            &copy; 2026 MythicBoost ID. Layanan Joki Independen — Tidak berafiliasi secara resmi dengan Moonton.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button (Mobile & Desktop) -->
+    <a href="https://wa.me/6285860190927?text=Halo%20Admin,%20saya%20ingin%20order%20joki%20push%20rank%20MLBB." target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp" class="fixed bottom-5 left-5 z-40 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center text-3xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Toggle Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tutup menu mobile saat link diklik
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Fungsi Notifikasi Toast (Tanpa alert)
+        function showToast(message) {
+            const toastBox = document.getElementById('toastBox');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            
+            toastBox.classList.remove('translate-y-24', 'opacity-0');
+            setTimeout(() => {
+                toastBox.classList.add('translate-y-24', 'opacity-0');
+            }, 3000);
+        }
+
+        // Fungsi Salin Teks ke Clipboard (Kompatibel dengan iFrame)
+        function copyText(text) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showToast('Nomor ' + text + ' berhasil disalin!');
+            } catch (err) {
+                showToast('Gagal menyalin nomor.');
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        // Kalkulator Harga Otomatis
+        const rankSelect = document.getElementById('rankSelect');
+        const starCount = document.getElementById('starCount');
+        const totalPriceDisplay = document.getElementById('totalPriceDisplay');
+
+        function formatRupiah(angka) {
+            return 'Rp ' + angka.toLocaleString('id-ID');
+        }
+
+        function calculateTotal() {
+            const selectedOption = rankSelect.options[rankSelect.selectedIndex];
+            const pricePerStar = parseInt(selectedOption.getAttribute('data-price')) || 0;
+            let stars = parseInt(starCount.value) || 0;
+            if (stars < 1) stars = 1;
+            const total = pricePerStar * stars;
+            totalPriceDisplay.textContent = formatRupiah(total);
+            return total;
+        }
+
+        rankSelect.addEventListener('change', calculateTotal);
+        starCount.addEventListener('input', calculateTotal);
+
+        // Pilih paket langsung dari kartu harga dan scroll ke form
+        function selectPackage(rankName, price) {
+            for (let i = 0; i < rankSelect.options.length; i++) {
+                if (rankSelect.options[i].value === rankName) {
+                    rankSelect.selectedIndex = i;
+                    break;
+                }
+            }
+            calculateTotal();
+            document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+            showToast('Rank ' + rankName + ' dipilih!');
+        }
+
+        // Submit Form ke WhatsApp Admin (085860190927)
+        const orderForm = document.getElementById('orderForm');
+        orderForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const rank = rankSelect.value;
+            const stars = starCount.value || 1;
+            const orderType = document.getElementById('orderType').value;
+            const orderTime = document.getElementById('orderTime').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            const heroRequest = document.getElementById('heroRequest').value.trim() || 'Bebas (Meta)';
+            const totalFormatted = formatRupiah(calculateTotal());
+
+            const waNumber = '6285860190927';
+            const message = 
+`Halo Admin *MythicBoost*, saya ingin order jasa joki push rank MLBB:
+
+• *Rank Saat Ini:* ${rank}
+• *Jumlah Bintang:* ${stars} Bintang
+• *Bentuk Order:* ${orderType}
+• *Waktu Pengerjaan:* ${orderTime}
+• *Pembayaran:* ${paymentMethod}
+• *Request Hero:* ${heroRequest}
+• *Estimasi Total:* *${totalFormatted}*
+
+Mohon info antrian dan detail selanjutnya ya Min!`;
+
+            const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        });
+
+        // Hitung total awal saat halaman dimuat
+        calculateTotal();
+    </script>
+</body>
+</html>
+```
