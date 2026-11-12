@@ -1,0 +1,1541 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Land - Hunian Impian & Jasa Jual Rumah Modern</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-brand-800 to-brand-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                        <i class="fa-solid font-bold fa-house-chimney text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-brand-900 via-brand-800 to-brand-600 bg-clip-text text-transparent block">Premier Land</span>
+                        <span class="text-[10px] tracking-widest text-slate-400 font-medium uppercase block -mt-1">Property & Living</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#beranda" class="hover:text-brand-600 transition-colors">Beranda</a>
+                    <a href="#keunggulan" class="hover:text-brand-600 transition-colors">Keunggulan</a>
+                    <a href="#tipe-rumah" class="hover:text-brand-600 transition-colors">Tipe & Harga</a>
+                    <a href="#pemesanan" class="hover:text-brand-600 transition-colors">Cara Pemesanan</a>
+                    <a href="#kalkulator" class="hover:text-brand-600 transition-colors">Kalkulator KPR</a>
+                </nav>
+
+                <!-- CTA Button WA -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6285861984837?text=Halo%20Premier%20Land,%20saya%20ingin%20konsultasi%20mengenai%20pembelian%20rumah." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-lg shadow-emerald-600/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>+62 858-6198-4837</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Beranda</a>
+            <a href="#keunggulan" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Keunggulan</a>
+            <a href="#tipe-rumah" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Tipe & Harga</a>
+            <a href="#pemesanan" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Cara Pemesanan</a>
+            <a href="#kalkulator" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Kalkulator KPR</a>
+            <a href="https://wa.me/6285861984837?text=Halo%20Premier%20Land,%20saya%20ingin%20konsultasi%20mengenai%20pembelian%20rumah." 
+               target="_blank"
+               class="flex items-center justify-center gap-2 w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Hubungi via WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-slate-900 text-white">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Rumah Modern Premier Land" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://placehold.co/1920x1080/0f172a/ffffff?text=Premier+Land+Modern+House'">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/30 text-brand-300 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-md">
+                    <i class="fa-solid fa-certificate text-emerald-400"></i> Developer Terpercaya & Legalitas SHM
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Temukan Rumah Impian Anda Dengan Transaksi <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-brand-300">Mudah & Aman</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
+                    Layanan jual beli hunian eksklusif dengan opsi pemesanan <strong>online</strong> maupun <strong>di tempat (offline)</strong>. Sistem pembayaran fleksibel via <strong>cash keras</strong> atau <strong>transfer rekening bank resmi</strong>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#form-order" 
+                       class="inline-flex items-center justify-center gap-3 bg-brand-500 hover:bg-brand-600 text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-500/30 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Pesan Sekarang</span>
+                    </a>
+                    <a href="#tipe-rumah" 
+                       class="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-base font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Lihat List Harga</span>
+                    </a>
+                </div>
+
+                <!-- Highlight Badges -->
+                <div class="mt-12 pt-8 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">100% Legal</div>
+                        <div class="text-xs text-slate-400 mt-1">Sertifikat Hak Milik (SHM)</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">Fleksibel</div>
+                        <div class="text-xs text-slate-400 mt-1">Order Online / In-situ</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">Pasti Aman</div>
+                        <div class="text-xs text-slate-400 mt-1">Pembayaran Direct Rekening</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-brand-600 mb-2">Mengapa Memilih Kami</h2>
+                <p class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">Layanan Jual Rumah Terbaik & Transparan</p>
+                <div class="w-16 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lokasi Strategis</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Perumahan berada di akses tol utama, bebas banjir, serta dekat fasilitas umum seperti rumah sakit dan sekolah.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-laptop-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pemesanan Bebas Fleksibel</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Pesan hunian bisa langsung secara <strong>Online</strong> melalui WhatsApp atau <strong>Di Tempat</strong> saat survei lokasi.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Metode Bayar Aman</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Transaksi aman dengan pilihan <strong>Cash Tunai</strong>, Cash Bertahap, atau via <strong>Transfer Rekening Resmi Perusahaan</strong>.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Layanan Respon Cepat</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Customer service siap membantu Anda 24/7 melalui nomor WhatsApp <strong class="text-slate-800">+62 858-6198-4837</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIST HARGA & TIPE PERUMAHAN -->
+    <section id="tipe-rumah" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-brand-600 mb-2">Katalog Properti</h2>
+                <p class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">Daftar Tipe Perumahan & Harga</p>
+                <p class="text-slate-600 mt-2">Pilih unit rumah sesuai anggaran dan kebutuhan keluarga Anda</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex justify-center flex-wrap gap-2 mb-12">
+                <button onclick="filterType('all')" class="filter-btn active bg-brand-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm">Semua Tipe</button>
+                <button onclick="filterType('subsidi')" class="filter-btn bg-white text-slate-600 border border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition-all">Subsidi / Minimalis</button>
+                <button onclick="filterType('komersil')" class="filter-btn bg-white text-slate-600 border border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition-all">Komersil Modern</button>
+                <button onclick="filterType('exclusive')" class="filter-btn bg-white text-slate-600 border border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition-all">Eksklusif 2 Lantai</button>
+            </div>
+
+            <!-- Grid House Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Tipe 36/60 -->
+                <div class="house-card subsidi bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe 36/60" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+36/60'">
+                        <span class="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Tipe Minimalis</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe 36/60 (Asri Family)</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Cocok untuk pasangan muda & investasi pertama</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 2</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 1</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 60m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 285.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 1,8 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe 36/60 (Asri Family)', '285.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipe 45/84 -->
+                <div class="house-card komersil bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe 45/84" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+45/84'">
+                        <span class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Terfavorit</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe 45/84 (Grand Cluster)</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Desain modern tropis dengan ruang keluarga luas</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 2</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 1</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 84m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 450.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 2,9 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe 45/84 (Grand Cluster)', '450.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipe 70/120 Dua Lantai -->
+                <div class="house-card exclusive bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe 70/120 Dua Lantai" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+70/120'">
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Premium 2 Lantai</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe 70/120 (Royal Residence)</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Hunian megah 2 lantai dengan carport 2 mobil</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 3+1</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 2</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 120m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 795.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 5,1 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe 70/120 (Royal Residence)', '795.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipe Hook Custom -->
+                <div class="house-card exclusive bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe Hook Custom" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+Hook+Custom'">
+                        <span class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Hook / Sudut</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe Custom Hook 90/150</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Lahan lebih luas di sudut blok dengan taman samping</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 4</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 3</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 150m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 980.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 6,3 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe Custom Hook 90/150', '980.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA & BENTUK PEMESANAN / PEMBAYARAN SECTION -->
+    <section id="pemesanan" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-emerald-400 mb-2">Prosedur Mudah</h2>
+                <p class="text-3xl font-extrabold tracking-tight sm:text-4xl">Metode Pemesanan & Pembayaran</p>
+                <p class="text-slate-400 mt-2">Kami menyediakan fleksibilitas penuh untuk keamanan dan kenyamanan Anda</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Bentuk Pemesanan -->
+                <div class="bg-slate-800/80 p-8 rounded-3xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-brand-500/20 text-brand-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Bentuk & Waktu Pemesanan</h3>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Pemesanan Online (Dari Rumah)</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Anda dapat melakukan konsultasi, pemilihan nomor kavling, serta booking fee secara online via WhatsApp tanpa harus datang langsung. Dokumen awal dapat dikirimkan secara digital.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Pemesanan Di Tempat (Offline)</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Tim kami siap mendampingi Anda untuk survei lokasi langsung di Marketing Gallery / Galeri Pemasaran kami. Transaksi dan tanda jadi dapat diselesaikan langsung di tempat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metode Pembayaran -->
+                <div class="bg-slate-800/80 p-8 rounded-3xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Opsi Pembayaran Resmi</h3>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-money-bill-1-wave"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Cash Keras & Cash Bertahap</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Pembayaran tunai langsung dengan diskon khusus, atau cicilan bertahap tanpa bunga langsung ke developer hingga 24 bulan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Transfer Rekening Bank Resmi</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Seluruh transaksi transfer via bank wajib ditujukan ke Rekening PT / Perusahaan Resmi untuk menjamin keamanan 100% uang Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PEMESANAN DIRECT WA -->
+    <section id="form-order" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-50 to-brand-50 p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-xl">
+                <div class="text-center mb-8">
+                    <span class="bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Formulir Pesanan</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Form Pemesanan & Konsultasi</h2>
+                    <p class="text-slate-600 text-sm mt-2">Isi formulir di bawah ini. Data Anda akan terkirim langsung ke WhatsApp Marketing resmi.</p>
+                </div>
+
+                <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nama Lengkap *</label>
+                            <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nomor WhatsApp / HP *</label>
+                            <input type="tel" id="telepon" required placeholder="Contoh: 08123456789" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Pilihan Tipe Rumah *</label>
+                            <select id="tipeRumah" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition-all">
+                                <option value="" disabled selected>Select Tipe</option>
+                                <option value="Tipe 36/60 (Asri Family)">Tipe 36/60 - Rp 285 Jt</option>
+                                <option value="Tipe 45/84 (Grand Cluster)">Tipe 45/84 - Rp 450 Jt</option>
+                                <option value="Tipe 70/120 (Royal Residence)">Tipe 70/120 - Rp 795 Jt</option>
+                                <option value="Tipe Custom Hook 90/150">Tipe Hook 90/150 - Rp 980 Jt</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Bentuk Pemesanan *</label>
+                            <select id="bentukPemesanan" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition-all">
+                                <option value="Pemesanan Online (WhatsApp)">Online (Via WA / Remote)</option>
+                                <option value="Pemesanan Di Tempat (Survei Lokasi)">Di Tempat (Offline / Kunjungan)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Metode Pembayaran *</label>
+                            <select id="metodePembayaran" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition-all">
+                                <option value="Cash Keras">Cash Keras (Tunai)</option>
+                                <option value="Cash Bertahap (Developer)">Cash Bertahap</option>
+                                <option value="Transfer Bank / Rekening Resmi">Transfer Rekening Resmi</option>
+                                <option value="KPR Bank">KPR Bank</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Catatan / Pertanyaan Tambahan</label>
+                        <textarea id="catatan" rows="3" placeholder="Tuliskan jadwal survei yang diinginkan atau pertanyaan lainnya..." 
+                                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-lg py-4 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Kirim Pemesanan via WhatsApp</span>
+                    </button>
+                    <p class="text-xs text-slate-500 text-center mt-2">Nomor tujuan: <strong>+62 858-6198-4837</strong></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR ESTIMASI KPR -->
+    <section id="kalkulator" class="py-16 bg-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-md">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fa-solid fa-calculator text-brand-600 text-2xl"></i>
+                    <h3 class="text-xl font-bold text-slate-900">Simulasi & Kalkulator KPR Sederhana</h3>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">Harga Rumah (Rp)</label>
+                        <input type="number" id="calcHarga" value="450000000" class="w-full p-2.5 border rounded-lg text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">Uang Muka / DP (%)</label>
+                        <input type="number" id="calcDP" value="10" class="w-full p-2.5 border rounded-lg text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">Tenor (Tahun)</label>
+                        <select id="calcTenor" class="w-full p-2.5 border rounded-lg text-sm bg-white">
+                            <option value="10">10 Tahun</option>
+                            <option value="15" selected>15 Tahun</option>
+                            <option value="20">20 Tahun</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button onclick="hitungKPR()" class="w-full bg-brand-600 text-white font-bold py-2.5 rounded-lg hover:bg-brand-700 transition-colors text-sm">Hitung Estimasi Angsuran</button>
+
+                <div id="calcResult" class="mt-6 p-4 bg-brand-50 rounded-xl hidden border border-brand-100 text-center">
+                    <span class="text-xs text-brand-800 font-semibold block uppercase">Estimasi Angsuran Per Bulan</span>
+                    <span id="angsuranBulan" class="text-2xl font-extrabold text-brand-700">Rp 0</span>
+                    <span class="text-[11px] text-slate-500 block mt-1">*Suku bunga estimasi 7% p.a. (Fixed rate)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-house-chimney text-sm"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">Premier Land</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Penyedia jasa pemesanan dan jual rumah terpercaya. Kami menghadirkan hunian aman, nyaman, berlegalitas resmi, dengan kemudahan transaksi baik online maupun di lokasi.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Kontak & Layanan</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                            <span>WhatsApp: <strong class="text-white">+62 858-6198-4837</strong></span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-brand-400"></i>
+                            <span>Jam Operasional: 08.00 - 20.00 WIB</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-rose-400"></i>
+                            <span>Galeri Pemasaran: Jl. Utama Perumahan Premier Land No. 01</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Metode Pembayaran</h4>
+                    <p class="text-xs text-slate-400 mb-3">Transaksi fleksibel secara Cash Tunai / Cash Bertahap atau Transfer Bank ke Rekening Resmi.</p>
+                    <div class="flex gap-2">
+                        <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded text-[11px] font-semibold text-slate-300">Cash Keras</span>
+                        <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded text-[11px] font-semibold text-slate-300">Cash Bertahap</span>
+                        <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded text-[11px] font-semibold text-slate-300">Bank Transfer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+                <p>&copy; 2026 Premier Land Property. All Rights Reserved. Nomor Order WA: +62 858-6198-4837.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR INTERACTION -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter House Types
+        function filterType(category) {
+            const cards = document.querySelectorAll('.house-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'active');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+
+            event.target.classList.remove('bg-white', 'text-slate-600');
+            event.target.classList.add('bg-brand-600', 'text-white', 'active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Select House Type and Scroll to Form
+        function selectHouseType(typeName, price) {
+            const selectEl = document.getElementById('tipeRumah');
+            selectEl.value = typeName;
+            
+            // Scroll smoothly to order form
+            document.getElementById('form-order').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle Form Submit to WhatsApp
+        function handleOrderSubmit(event) {
+            event.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const telepon = document.getElementById('telepon').value;
+            const tipeRumah = document.getElementById('tipeRumah').value;
+            const bentukPemesanan = document.getElementById('bentukPemesanan').value;
+            const metodePembayaran = document.getElementById('metodePembayaran').value;
+            const catatan = document.getElementById('catatan').value;
+
+            // Format message for WhatsApp
+            const message = `Halo Admin Premier Land, saya ingin pesan/konsultasi rumah:\n\n` +
+                `*Nama:* ${nama}\n` +
+                `*No. Telp/WA:* ${telepon}\n` +
+                `*Tipe Rumah:* ${tipeRumah}\n` +
+                `*Bentuk Pemesanan:* ${bentukPemesanan}\n` +
+                `*Metode Pembayaran:* ${metodePembayaran}\n` +
+                `*Catatan:* ${catatan || '-'}\n\n` +
+                `Mohon informasi lebih lanjut. Terima kasih.`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/6285861984837?text=${encodedMessage}`;
+
+            // Open WhatsApp
+            window.open(waUrl, '_blank');
+        }
+
+        // Simple KPR Calculator
+        function hitungKPR() {
+            const harga = parseFloat(document.getElementById('calcHarga').value) || 0;
+            const dpPercent = parseFloat(document.getElementById('calcDP').value) || 0;
+            const tenorTahun = parseInt(document.getElementById('calcTenor').value) || 15;
+
+            const totalDP = (harga * dpPercent) / 100;
+            const pokokPinjaman = harga - totalDP;
+            
+            // Assume 7% annual interest rate
+            const bungaTahunan = 0.07;
+            const totalBulan = tenorTahun * 12;
+            const bungaBulan = bungaTahunan / 12;
+
+            // Annuity formula
+            const angsuran = (pokokPinjaman * bungaBulan) / (1 - Math.pow(1 + bungaBulan, -totalBulan));
+
+            const resultDiv = document.getElementById('calcResult');
+            const angsuranEl = document.getElementById('angsuranBulan');
+
+            angsuranEl.textContent = 'Rp ' + Math.round(angsuran).toLocaleString('id-ID');
+            resultDiv.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
+``````html
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Land - Hunian Impian & Jasa Jual Rumah Modern</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-tr from-brand-800 to-brand-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                        <i class="fa-solid font-bold fa-house-chimney text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-brand-900 via-brand-800 to-brand-600 bg-clip-text text-transparent block">Premier Land</span>
+                        <span class="text-[10px] tracking-widest text-slate-400 font-medium uppercase block -mt-1">Property & Living</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#beranda" class="hover:text-brand-600 transition-colors">Beranda</a>
+                    <a href="#keunggulan" class="hover:text-brand-600 transition-colors">Keunggulan</a>
+                    <a href="#tipe-rumah" class="hover:text-brand-600 transition-colors">Tipe & Harga</a>
+                    <a href="#pemesanan" class="hover:text-brand-600 transition-colors">Cara Pemesanan</a>
+                    <a href="#kalkulator" class="hover:text-brand-600 transition-colors">Kalkulator KPR</a>
+                </nav>
+
+                <!-- CTA Button WA -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/6285861984837?text=Halo%20Premier%20Land,%20saya%20ingin%20konsultasi%20mengenai%20pembelian%20rumah." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-5 py-2.5 rounded-full shadow-lg shadow-emerald-600/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>+62 858-6198-4837</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#beranda" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Beranda</a>
+            <a href="#keunggulan" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Keunggulan</a>
+            <a href="#tipe-rumah" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Tipe & Harga</a>
+            <a href="#pemesanan" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Cara Pemesanan</a>
+            <a href="#kalkulator" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Kalkulator KPR</a>
+            <a href="https://wa.me/6285861984837?text=Halo%20Premier%20Land,%20saya%20ingin%20konsultasi%20mengenai%20pembelian%20rumah." 
+               target="_blank"
+               class="flex items-center justify-center gap-2 w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Hubungi via WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-slate-900 text-white">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Rumah Modern Premier Land" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://placehold.co/1920x1080/0f172a/ffffff?text=Premier+Land+Modern+House'">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-2 bg-brand-500/20 border border-brand-400/30 text-brand-300 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-md">
+                    <i class="fa-solid fa-certificate text-emerald-400"></i> Developer Terpercaya & Legalitas SHM
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Temukan Rumah Impian Anda Dengan Transaksi <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-brand-300">Mudah & Aman</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
+                    Layanan jual beli hunian eksklusif dengan opsi pemesanan <strong>online</strong> maupun <strong>di tempat (offline)</strong>. Sistem pembayaran fleksibel via <strong>cash keras</strong> atau <strong>transfer rekening bank resmi</strong>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#form-order" 
+                       class="inline-flex items-center justify-center gap-3 bg-brand-500 hover:bg-brand-600 text-white text-base font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-500/30 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Pesan Sekarang</span>
+                    </a>
+                    <a href="#tipe-rumah" 
+                       class="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-base font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Lihat List Harga</span>
+                    </a>
+                </div>
+
+                <!-- Highlight Badges -->
+                <div class="mt-12 pt-8 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">100% Legal</div>
+                        <div class="text-xs text-slate-400 mt-1">Sertifikat Hak Milik (SHM)</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">Fleksibel</div>
+                        <div class="text-xs text-slate-400 mt-1">Order Online / In-situ</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">Pasti Aman</div>
+                        <div class="text-xs text-slate-400 mt-1">Pembayaran Direct Rekening</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-brand-600 mb-2">Mengapa Memilih Kami</h2>
+                <p class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">Layanan Jual Rumah Terbaik & Transparan</p>
+                <div class="w-16 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lokasi Strategis</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Perumahan berada di akses tol utama, bebas banjir, serta dekat fasilitas umum seperti rumah sakit dan sekolah.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-laptop-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pemesanan Bebas Fleksibel</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Pesan hunian bisa langsung secara <strong>Online</strong> melalui WhatsApp atau <strong>Di Tempat</strong> saat survei lokasi.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Metode Bayar Aman</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Transaksi aman dengan pilihan <strong>Cash Tunai</strong>, Cash Bertahap, atau via <strong>Transfer Rekening Resmi Perusahaan</strong>.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:border-brand-100 transition-all group">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Layanan Respon Cepat</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Customer service siap membantu Anda 24/7 melalui nomor WhatsApp <strong class="text-slate-800">+62 858-6198-4837</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIST HARGA & TIPE PERUMAHAN -->
+    <section id="tipe-rumah" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-brand-600 mb-2">Katalog Properti</h2>
+                <p class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">Daftar Tipe Perumahan & Harga</p>
+                <p class="text-slate-600 mt-2">Pilih unit rumah sesuai anggaran dan kebutuhan keluarga Anda</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex justify-center flex-wrap gap-2 mb-12">
+                <button onclick="filterType('all')" class="filter-btn active bg-brand-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-sm">Semua Tipe</button>
+                <button onclick="filterType('subsidi')" class="filter-btn bg-white text-slate-600 border border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition-all">Subsidi / Minimalis</button>
+                <button onclick="filterType('komersil')" class="filter-btn bg-white text-slate-600 border border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition-all">Komersil Modern</button>
+                <button onclick="filterType('exclusive')" class="filter-btn bg-white text-slate-600 border border-slate-200 px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-100 transition-all">Eksklusif 2 Lantai</button>
+            </div>
+
+            <!-- Grid House Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Tipe 36/60 -->
+                <div class="house-card subsidi bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe 36/60" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+36/60'">
+                        <span class="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Tipe Minimalis</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe 36/60 (Asri Family)</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Cocok untuk pasangan muda & investasi pertama</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 2</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 1</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 60m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 285.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 1,8 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe 36/60 (Asri Family)', '285.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipe 45/84 -->
+                <div class="house-card komersil bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe 45/84" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+45/84'">
+                        <span class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Terfavorit</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe 45/84 (Grand Cluster)</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Desain modern tropis dengan ruang keluarga luas</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 2</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 1</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 84m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 450.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 2,9 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe 45/84 (Grand Cluster)', '450.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipe 70/120 Dua Lantai -->
+                <div class="house-card exclusive bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe 70/120 Dua Lantai" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+70/120'">
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Premium 2 Lantai</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe 70/120 (Royal Residence)</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Hunian megah 2 lantai dengan carport 2 mobil</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 3+1</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 2</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 120m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 795.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 5,1 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe 70/120 (Royal Residence)', '795.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipe Hook Custom -->
+                <div class="house-card exclusive bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="relative h-56 bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Tipe Hook Custom" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/800x600/e2e8f0/1e293b?text=Tipe+Hook+Custom'">
+                        <span class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Hook / Sudut</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-slate-900">Tipe Custom Hook 90/150</h3>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-4">Lahan lebih luas di sudut blok dengan taman samping</p>
+                            
+                            <!-- Specifications -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 mb-4 text-center">
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Tidur</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bed text-brand-500 mr-1"></i> 4</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">K. Mandi</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-bath text-brand-500 mr-1"></i> 3</span>
+                                </div>
+                                <div>
+                                    <span class="block text-slate-400 text-xs">Luas Tanah</span>
+                                    <span class="font-bold text-slate-800 text-sm"><i class="fa-solid fa-vector-square text-brand-500 mr-1"></i> 150m²</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-4">
+                                <span class="text-xs text-slate-400 block font-medium">Harga Mulai From</span>
+                                <span class="text-2xl font-extrabold text-brand-600">Rp 980.000.000</span>
+                                <span class="text-xs text-slate-500 block">Est. Angsuran: Rp 6,3 Jt-an/bln</span>
+                            </div>
+
+                            <button onclick="selectHouseType('Tipe Custom Hook 90/150', '980.000.000')" 
+                                    class="w-full bg-slate-900 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-sm"></i>
+                                <span>Pesan Tipe Ini</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA & BENTUK PEMESANAN / PEMBAYARAN SECTION -->
+    <section id="pemesanan" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs uppercase font-extrabold tracking-widest text-emerald-400 mb-2">Prosedur Mudah</h2>
+                <p class="text-3xl font-extrabold tracking-tight sm:text-4xl">Metode Pemesanan & Pembayaran</p>
+                <p class="text-slate-400 mt-2">Kami menyediakan fleksibilitas penuh untuk keamanan dan kenyamanan Anda</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Bentuk Pemesanan -->
+                <div class="bg-slate-800/80 p-8 rounded-3xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-brand-500/20 text-brand-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Bentuk & Waktu Pemesanan</h3>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Pemesanan Online (Dari Rumah)</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Anda dapat melakukan konsultasi, pemilihan nomor kavling, serta booking fee secara online via WhatsApp tanpa harus datang langsung. Dokumen awal dapat dikirimkan secara digital.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Pemesanan Di Tempat (Offline)</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Tim kami siap mendampingi Anda untuk survei lokasi langsung di Marketing Gallery / Galeri Pemasaran kami. Transaksi dan tanda jadi dapat diselesaikan langsung di tempat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metode Pembayaran -->
+                <div class="bg-slate-800/80 p-8 rounded-3xl border border-slate-700">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Opsi Pembayaran Resmi</h3>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-money-bill-1-wave"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Cash Keras & Cash Bertahap</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Pembayaran tunai langsung dengan diskon khusus, atau cicilan bertahap tanpa bunga langsung ke developer hingga 24 bulan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Transfer Rekening Bank Resmi</h4>
+                                <p class="text-slate-400 text-sm mt-1">
+                                    Seluruh transaksi transfer via bank wajib ditujukan ke Rekening PT / Perusahaan Resmi untuk menjamin keamanan 100% uang Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PEMESANAN DIRECT WA -->
+    <section id="form-order" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-50 to-brand-50 p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-xl">
+                <div class="text-center mb-8">
+                    <span class="bg-brand-100 text-brand-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Formulir Pesanan</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Form Pemesanan & Konsultasi</h2>
+                    <p class="text-slate-600 text-sm mt-2">Isi formulir di bawah ini. Data Anda akan terkirim langsung ke WhatsApp Marketing resmi.</p>
+                </div>
+
+                <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nama Lengkap *</label>
+                            <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nomor WhatsApp / HP *</label>
+                            <input type="tel" id="telepon" required placeholder="Contoh: 08123456789" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Pilihan Tipe Rumah *</label>
+                            <select id="tipeRumah" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition-all">
+                                <option value="" disabled selected>Select Tipe</option>
+                                <option value="Tipe 36/60 (Asri Family)">Tipe 36/60 - Rp 285 Jt</option>
+                                <option value="Tipe 45/84 (Grand Cluster)">Tipe 45/84 - Rp 450 Jt</option>
+                                <option value="Tipe 70/120 (Royal Residence)">Tipe 70/120 - Rp 795 Jt</option>
+                                <option value="Tipe Custom Hook 90/150">Tipe Hook 90/150 - Rp 980 Jt</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Bentuk Pemesanan *</label>
+                            <select id="bentukPemesanan" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition-all">
+                                <option value="Pemesanan Online (WhatsApp)">Online (Via WA / Remote)</option>
+                                <option value="Pemesanan Di Tempat (Survei Lokasi)">Di Tempat (Offline / Kunjungan)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Metode Pembayaran *</label>
+                            <select id="metodePembayaran" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none bg-white transition-all">
+                                <option value="Cash Keras">Cash Keras (Tunai)</option>
+                                <option value="Cash Bertahap (Developer)">Cash Bertahap</option>
+                                <option value="Transfer Bank / Rekening Resmi">Transfer Rekening Resmi</option>
+                                <option value="KPR Bank">KPR Bank</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Catatan / Pertanyaan Tambahan</label>
+                        <textarea id="catatan" rows="3" placeholder="Tuliskan jadwal survei yang diinginkan atau pertanyaan lainnya..." 
+                                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-lg py-4 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Kirim Pemesanan via WhatsApp</span>
+                    </button>
+                    <p class="text-xs text-slate-500 text-center mt-2">Nomor tujuan: <strong>+62 858-6198-4837</strong></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR ESTIMASI KPR -->
+    <section id="kalkulator" class="py-16 bg-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-md">
+                <div class="flex items-center gap-3 mb-6">
+                    <i class="fa-solid fa-calculator text-brand-600 text-2xl"></i>
+                    <h3 class="text-xl font-bold text-slate-900">Simulasi & Kalkulator KPR Sederhana</h3>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">Harga Rumah (Rp)</label>
+                        <input type="number" id="calcHarga" value="450000000" class="w-full p-2.5 border rounded-lg text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">Uang Muka / DP (%)</label>
+                        <input type="number" id="calcDP" value="10" class="w-full p-2.5 border rounded-lg text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-600 mb-1">Tenor (Tahun)</label>
+                        <select id="calcTenor" class="w-full p-2.5 border rounded-lg text-sm bg-white">
+                            <option value="10">10 Tahun</option>
+                            <option value="15" selected>15 Tahun</option>
+                            <option value="20">20 Tahun</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button onclick="hitungKPR()" class="w-full bg-brand-600 text-white font-bold py-2.5 rounded-lg hover:bg-brand-700 transition-colors text-sm">Hitung Estimasi Angsuran</button>
+
+                <div id="calcResult" class="mt-6 p-4 bg-brand-50 rounded-xl hidden border border-brand-100 text-center">
+                    <span class="text-xs text-brand-800 font-semibold block uppercase">Estimasi Angsuran Per Bulan</span>
+                    <span id="angsuranBulan" class="text-2xl font-extrabold text-brand-700">Rp 0</span>
+                    <span class="text-[11px] text-slate-500 block mt-1">*Suku bunga estimasi 7% p.a. (Fixed rate)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-house-chimney text-sm"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">Premier Land</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Penyedia jasa pemesanan dan jual rumah terpercaya. Kami menghadirkan hunian aman, nyaman, berlegalitas resmi, dengan kemudahan transaksi baik online maupun di lokasi.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Kontak & Layanan</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                            <span>WhatsApp: <strong class="text-white">+62 858-6198-4837</strong></span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-brand-400"></i>
+                            <span>Jam Operasional: 08.00 - 20.00 WIB</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-rose-400"></i>
+                            <span>Galeri Pemasaran: Jl. Utama Perumahan Premier Land No. 01</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">Metode Pembayaran</h4>
+                    <p class="text-xs text-slate-400 mb-3">Transaksi fleksibel secara Cash Tunai / Cash Bertahap atau Transfer Bank ke Rekening Resmi.</p>
+                    <div class="flex gap-2">
+                        <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded text-[11px] font-semibold text-slate-300">Cash Keras</span>
+                        <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded text-[11px] font-semibold text-slate-300">Cash Bertahap</span>
+                        <span class="bg-slate-900 border border-slate-800 px-3 py-1.5 rounded text-[11px] font-semibold text-slate-300">Bank Transfer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+                <p>&copy; 2026 Premier Land Property. All Rights Reserved. Nomor Order WA: +62 858-6198-4837.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR INTERACTION -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter House Types
+        function filterType(category) {
+            const cards = document.querySelectorAll('.house-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'active');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+
+            event.target.classList.remove('bg-white', 'text-slate-600');
+            event.target.classList.add('bg-brand-600', 'text-white', 'active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Select House Type and Scroll to Form
+        function selectHouseType(typeName, price) {
+            const selectEl = document.getElementById('tipeRumah');
+            selectEl.value = typeName;
+            
+            // Scroll smoothly to order form
+            document.getElementById('form-order').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle Form Submit to WhatsApp
+        function handleOrderSubmit(event) {
+            event.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const telepon = document.getElementById('telepon').value;
+            const tipeRumah = document.getElementById('tipeRumah').value;
+            const bentukPemesanan = document.getElementById('bentukPemesanan').value;
+            const metodePembayaran = document.getElementById('metodePembayaran').value;
+            const catatan = document.getElementById('catatan').value;
+
+            // Format message for WhatsApp
+            const message = `Halo Admin Premier Land, saya ingin pesan/konsultasi rumah:\n\n` +
+                `*Nama:* ${nama}\n` +
+                `*No. Telp/WA:* ${telepon}\n` +
+                `*Tipe Rumah:* ${tipeRumah}\n` +
+                `*Bentuk Pemesanan:* ${bentukPemesanan}\n` +
+                `*Metode Pembayaran:* ${metodePembayaran}\n` +
+                `*Catatan:* ${catatan || '-'}\n\n` +
+                `Mohon informasi lebih lanjut. Terima kasih.`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/6285861984837?text=${encodedMessage}`;
+
+            // Open WhatsApp
+            window.open(waUrl, '_blank');
+        }
+
+        // Simple KPR Calculator
+        function hitungKPR() {
+            const harga = parseFloat(document.getElementById('calcHarga').value) || 0;
+            const dpPercent = parseFloat(document.getElementById('calcDP').value) || 0;
+            const tenorTahun = parseInt(document.getElementById('calcTenor').value) || 15;
+
+            const totalDP = (harga * dpPercent) / 100;
+            const pokokPinjaman = harga - totalDP;
+            
+            // Assume 7% annual interest rate
+            const bungaTahunan = 0.07;
+            const totalBulan = tenorTahun * 12;
+            const bungaBulan = bungaTahunan / 12;
+
+            // Annuity formula
+            const angsuran = (pokokPinjaman * bungaBulan) / (1 - Math.pow(1 + bungaBulan, -totalBulan));
+
+            const resultDiv = document.getElementById('calcResult');
+            const angsuranEl = document.getElementById('angsuranBulan');
+
+            angsuranEl.textContent = 'Rp ' + Math.round(angsuran).toLocaleString('id-ID');
+            resultDiv.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
+```
